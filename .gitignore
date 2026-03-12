@@ -1,1 +1,6 @@
 node_modules
+.next
+out
+build
+node_modules
+.DS_Store
