@@ -1,14 +1,6 @@
 {
   "app": {
-    "[project]/src/app/_not-found/page": [
-      "static/media/ad9c66e761fed85a-s.p.bd81a64b.woff2",
-      "static/media/a2e43fa771f656bf-s.p.bb5bc52f.woff2"
-    ],
-    "[project]/src/app/legal/charter/page": [
-      "static/media/ad9c66e761fed85a-s.p.bd81a64b.woff2",
-      "static/media/a2e43fa771f656bf-s.p.bb5bc52f.woff2"
-    ],
-    "[project]/src/app/news/page": [
+    "[project]/src/app/financial/page": [
       "static/media/ad9c66e761fed85a-s.p.bd81a64b.woff2",
       "static/media/a2e43fa771f656bf-s.p.bb5bc52f.woff2"
     ],

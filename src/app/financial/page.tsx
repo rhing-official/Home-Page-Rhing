@@ -26,7 +26,6 @@ const tabs = [...months, "年次"];
 // 収入の細目
 type IncomeDetail = {
     subscription: number | "-";   // サブスクリプション収入
-    creatorMarket: number | "-";  // クリエイターマーケット（daidai横丁）手数料
     other: number | "-";          // その他収入
 };
 
@@ -59,62 +58,62 @@ type YearData = Record<string, MonthData>;
 const data2026: YearData = {
     "4月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "5月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "6月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "7月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "8月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "9月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "10月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "11月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "12月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "1月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "2月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
     "3月": {
         currentIncome: "-", prevIncome: "-", currentExpense: "-", prevExpense: "-",
-        currentIncomeDetail: { subscription: "-", creatorMarket: "-", other: "-" },
+        currentIncomeDetail: { subscription: "-", other: "-" },
         currentExpenseDetail: { server: "-", payment: "-", labor: "-", marketing: "-", legal: "-", other: "-" },
     },
 };
@@ -308,10 +307,6 @@ export default function FinancialPage() {
                                     <div className="flex justify-between text-sm text-gray-600">
                                         <span>サブスクリプション</span>
                                         <span className="font-medium">{formatCurrency(currentMonthData.currentIncomeDetail.subscription)}</span>
-                                    </div>
-                                    <div className="flex justify-between text-sm text-gray-600">
-                                        <span>daidai横丁 手数料</span>
-                                        <span className="font-medium">{formatCurrency(currentMonthData.currentIncomeDetail.creatorMarket)}</span>
                                     </div>
                                     <div className="flex justify-between text-sm text-gray-600">
                                         <span>その他</span>
