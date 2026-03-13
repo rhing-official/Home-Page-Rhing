@@ -17,15 +17,23 @@ export default function ZakuroPage() {
     return (
         <div className="w-full bg-[#fdfbf7] text-gray-800 pb-32">
             {/* ヒーローエリア */}
-            <div className="container mx-auto px-6 py-24 text-center">
-                <h1 className="text-4xl md:text-5xl font-bold tracking-widest text-gray-900 mb-4">zakuro</h1>
-                <p className="text-xl md:text-2xl tracking-[0.2em] mb-12">「本と、二人きり。」</p>
-                <div className="flex flex-wrap justify-center gap-4">
-                    <button className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition">Android</button>
-                    <button className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition">iOS</button>
-                    <button className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition">Windows</button>
-                    <button className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition">macOS</button>
-                    <button className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition">Linux</button>
+            <div className="container mx-auto px-6 pt-40 pb-24 text-center">
+                <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-widest text-gray-900 mb-6">zakuro</h1>
+                <p className="text-xl md:text-2xl font-light tracking-[0.2em] mb-12">「本と、二人きり。」</p>
+
+                {/* 🌟 ボタンの近くに「無料」であることを添えるデザイン */}
+                <div className="flex flex-col items-center gap-6">
+                    <div className="flex flex-wrap justify-center gap-4">
+                        {["Android", "Windows", "Linux"].map((platform) => (
+                            <button key={platform} className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition">
+                                {platform}版
+                            </button>
+                        ))}
+                    </div>
+                    {/* 🌟 控えめに添えることで、押し付けがましさを消す */}
+                    <p className="text-sm text-gray-500 tracking-widest uppercase">
+                        Free to use / No account required
+                    </p>
                 </div>
             </div>
 
