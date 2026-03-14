@@ -1,14 +1,22 @@
 {
   "app": {
+    "[project]/src/app/about/page": [
+      "static/media/ad9c66e761fed85a-s.p.bd81a64b.woff2",
+      "static/media/a2e43fa771f656bf-s.p.bb5bc52f.woff2"
+    ],
+    "[project]/src/app/community/page": [
+      "static/media/ad9c66e761fed85a-s.p.bd81a64b.woff2",
+      "static/media/a2e43fa771f656bf-s.p.bb5bc52f.woff2"
+    ],
+    "[project]/src/app/financial/page": [
+      "static/media/ad9c66e761fed85a-s.p.bd81a64b.woff2",
+      "static/media/a2e43fa771f656bf-s.p.bb5bc52f.woff2"
+    ],
     "[project]/src/app/page": [
       "static/media/ad9c66e761fed85a-s.p.bd81a64b.woff2",
       "static/media/a2e43fa771f656bf-s.p.bb5bc52f.woff2"
     ],
     "[project]/src/app/services/page": [
-      "static/media/ad9c66e761fed85a-s.p.bd81a64b.woff2",
-      "static/media/a2e43fa771f656bf-s.p.bb5bc52f.woff2"
-    ],
-    "[project]/src/app/services/zakuro/page": [
       "static/media/ad9c66e761fed85a-s.p.bd81a64b.woff2",
       "static/media/a2e43fa771f656bf-s.p.bb5bc52f.woff2"
     ]

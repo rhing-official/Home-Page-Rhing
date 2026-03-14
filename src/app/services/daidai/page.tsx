@@ -62,7 +62,7 @@ export default function DaiDaiPage() {
                             <tr className="border-b text-gray-400 text-xs uppercase tracking-widest">
                                 <th className="p-6">機能</th>
                                 <th className="p-6">無料</th>
-                                <th className="p-6 text-amber-600">極み（¥980/月）</th>
+                                <th className="p-6 text-amber-600">極み（¥330/月）</th>
                             </tr>
                         </thead>
                         <tbody className="text-gray-600">

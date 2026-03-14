@@ -33,17 +33,22 @@ export default function Home() {
                 </motion.div>
             </section>
 
-            {/* 導線エリア*/}
-            <section className="container mx-auto px-4 py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* 導線エリア：max-w-4xl から max-w-6xl に広げ、左右に余白を活かして配置します */}
+            <section className="container mx-auto px-6 py-16 max-w-6xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> {/* 🌟 gap-6 を gap-8 にしてゆとりを持たせます */}
                     {menuCards.map((card, index) => (
-                        <Link key={index} href={card.href} className="group block h-64 bg-[#f8f8f8] hover:bg-[#111] transition-colors duration-500 rounded-lg overflow-hidden relative p-8">
+                        /* 🌟 h-64 を h-72 に変更して、ブロックを縦にも大きくします */
+                        <Link
+                            key={index}
+                            href={card.href}
+                            className="group block h-72 bg-[#f8f8f8] hover:bg-[#111] transition-all duration-500 rounded-2xl overflow-hidden relative p-10"
+                        >
                             <div className="relative z-10 h-full flex flex-col justify-between">
                                 <div>
                                     <h2 className="text-sm font-bold tracking-widest text-gray-400 group-hover:text-gray-300 transition-colors">
                                         {card.en}
                                     </h2>
-                                    <p className="text-2xl font-bold mt-2 text-gray-900 group-hover:text-white transition-colors">
+                                    <p className="text-3xl font-bold mt-3 text-gray-900 group-hover:text-white transition-colors">
                                         {card.title}
                                     </p>
                                 </div>
@@ -51,9 +56,9 @@ export default function Home() {
                                     <span className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors">
                                         {card.desc}
                                     </span>
-                                    {/* 矢印アイコンがホバーで右にスライド */}
-                                    <div className="w-10 h-10 rounded-full border border-gray-300 group-hover:border-white flex items-center justify-center group-hover:bg-white text-gray-900 transition-all duration-300 transform group-hover:translate-x-2">
-                                        <ArrowRight className="w-5 h-5 group-hover:text-black" />
+                                    {/* 矢印アイコン */}
+                                    <div className="w-12 h-12 rounded-full border border-gray-300 group-hover:border-white flex items-center justify-center group-hover:bg-white text-gray-900 transition-all duration-300 transform group-hover:translate-x-2">
+                                        <ArrowRight className="w-6 h-6 group-hover:text-black" />
                                     </div>
                                 </div>
                             </div>

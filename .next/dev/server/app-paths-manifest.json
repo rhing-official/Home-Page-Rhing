@@ -1,5 +1,7 @@
 {
+  "/about/page": "app/about/page.js",
+  "/community/page": "app/community/page.js",
+  "/financial/page": "app/financial/page.js",
   "/page": "app/page.js",
-  "/services/page": "app/services/page.js",
-  "/services/zakuro/page": "app/services/zakuro/page.js"
+  "/services/page": "app/services/page.js"
 }

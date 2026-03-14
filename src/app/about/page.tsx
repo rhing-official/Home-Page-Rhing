@@ -56,7 +56,7 @@ export default function AboutPage() {
                         {/* 所在地 */}
                         <div className="py-8 flex flex-col md:flex-row gap-4 md:gap-12 hover:bg-gray-50 transition-colors px-4">
                             <dt className="w-48 shrink-0 font-bold text-gray-900 tracking-wider">所在地</dt>
-                            <dd className="text-gray-700">長野県下伊那郡豊丘村神稲4573-1</dd> {/* ← 実際の所在地に書き換えてください */}
+                            <dd className="text-gray-700">長野県のどこか　※商取引するようになったら明記します</dd> {/* ← 実際の所在地に書き換えてください */}
                         </div>
 
                         {/* 代表者 */}
