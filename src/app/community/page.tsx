@@ -15,7 +15,7 @@ const positions = [
         criteria: [
             "Flutterを用いたアプリ開発",
             "バグや脆弱性の発見と修正",
-            "何よりも募集しています"
+            "募集比率：高"
         ],
     },
     {
@@ -24,6 +24,7 @@ const positions = [
         criteria: [
             "団体運営に関わる法務業務全般",
             "規約の作成・レビュー等",
+            "募集比率：中"
         ],
     },
     {
@@ -32,6 +33,7 @@ const positions = [
         criteria: [
             "団体の活動やサービスの広報活動",
             "ホームページ更新",
+            "募集比率：低"
         ],
     },
     {
@@ -39,6 +41,7 @@ const positions = [
         en: "ACCOUNTING",
         criteria: [
             "収支管理および月次・年次の財務報告作成",
+            "募集比率：低"
         ],
     },
     {
@@ -46,6 +49,7 @@ const positions = [
         en: "COMMUNITY MANAGER",
         criteria: [
             "アプリのユーザーサポート",
+            "募集比率：低"
         ],
     },
     {
@@ -54,6 +58,7 @@ const positions = [
         criteria: [
             "ロゴ制作",
             "アプリUI/UXデザイン",
+            "募集比率：中"
         ],
     },
 ];
