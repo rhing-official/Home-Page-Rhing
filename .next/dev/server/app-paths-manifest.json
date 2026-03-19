@@ -1,7 +1,9 @@
 {
   "/about/page": "app/about/page.js",
-  "/community/page": "app/community/page.js",
   "/financial/page": "app/financial/page.js",
+  "/legal/charter/page": "app/legal/charter/page.js",
   "/page": "app/page.js",
-  "/services/page": "app/services/page.js"
+  "/services/daidai/page": "app/services/daidai/page.js",
+  "/services/page": "app/services/page.js",
+  "/services/zakuro/page": "app/services/zakuro/page.js"
 }

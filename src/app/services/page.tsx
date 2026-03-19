@@ -14,8 +14,8 @@ const services = [
         name: "zakuro", // kuwaから変更
         tagline: "本と、二人きり。", // ここに追加
         category: "Book Reader",
-        description: "以前から複数プラットフォームで同じ使用感で利用できる電子書籍リーダーを作りたかったので作ろうと思いました。現在鋭意開発中です。3月中の公開を目指していますが、4月までずれ込むかもしれません。手元にMacがないのでiOS,MacOS版のリリースは目処が立つまでお預けになります。ごめんなさい。",
-        features: ["CBZ,PDFの読み込み", "設定のカスタマイズ化", "Android,Linux,Windows,iOS,macOS対応"],
+        description: "以前から複数プラットフォームで同じ使用感で利用できる電子書籍リーダーを作りたかったので作ろうと思いました。4月中の公開を目指していますが、いつ公開できるか分かりません。手元にMacがないのでiOS,MacOS版のリリースは目処が立つまでお預けになります。",
+        features: ["CBZ,PDFの読み込み", "設定のカスタマイズ化", "Android,Linux,Windows,iOS,macOS対応", "開発中"],
         link: "/services/zakuro",
         bgColor: "bg-gray-200",
     },
@@ -25,7 +25,7 @@ const services = [
         tagline: "整う、守る、私に馴染む。", // ここに追加
         category: "Messages",
         description: "プライバシーを守る、メッセージアプリ。広告なし、電話番号・メールアドレス不要で、あなたのデータを売却しません。家族や友人との語らいから、コミュニティでの交流まで、安心して繋がれる場所を提供します。",
-        features: ["厳重なプライバシー保護", "広告なし", "電話番号・メアド不要", "Android,Linux,Windows,iOS,macOS,Web対応"],
+        features: ["厳重なプライバシー保護", "広告なし", "電話番号・メアド不要", "Android,Linux,Windows,iOS,macOS,Web対応", "開発未着手"],
         link: "/services/daidai",
         bgColor: "bg-gray-300",
     }
@@ -39,6 +39,15 @@ export default function ServicesPage() {
                 <div className="mb-16 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold tracking-widest text-gray-900 mb-4">SERVICES</h1>
                     <p className="text-gray-500 tracking-wider text-sm">サービス紹介</p>
+                </div>
+
+                <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-gray-600 leading-relaxed text-sm text-justify max-w-3xl mx-auto mb-16 shadow-sm">
+                    <p>
+                        Rhingは代表が趣味でアプリ開発をして経費精算する上で、個人事業として行った方が都合が良かったので立ち上げただけの団体になります。私にはアプリ開発の知識は基礎的な部分しかありません。
+                    </p>
+                    <p className="mt-4">
+                        以下に記載されている一番下のサービスの「DaiDai」を開発することを最終目標として、学習しながら自己満足なアプリを開発したり、たまに刺さる人には刺さるアプリを開発していければと考えています。「DaiDai」のおおまかな構想自体は決まっていますが完成させる技術が全くないので、いつ完成するのか、本当に完成するのか、そもそも完成したところで誰か使ってくれるのか、一番考慮すべき箇所を全く考慮していないプロジェクトになります。なので全く期待しないでください。
+                    </p>
                 </div>
             </div>
             {/* サービス一覧セクション */}

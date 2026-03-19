@@ -38,8 +38,6 @@ export default function Header() {
                     <NavLink href="/">TOP</NavLink>
                     <NavLink href="/about">ABOUT</NavLink>
                     <NavLink href="/services">SERVICES</NavLink>
-                    <NavLink href="/financial">FINANCIAL</NavLink>
-                    <NavLink href="/community">COMM</NavLink>
                     <NavLink href="https://note.com/rhing_official/all">NEWS</NavLink>
                 </nav>
 
@@ -66,8 +64,6 @@ export default function Header() {
                             <NavLink href="/" onClick={() => setIsOpen(false)}>TOP</NavLink>
                             <NavLink href="/about" onClick={() => setIsOpen(false)}>ABOUT</NavLink>
                             <NavLink href="/services" onClick={() => setIsOpen(false)}>SERVICES</NavLink>
-                            <NavLink href="/financial" onClick={() => setIsOpen(false)}>FINANCIAL</NavLink>
-                            <NavLink href="/community" onClick={() => setIsOpen(false)}>COMM</NavLink>
                             <NavLink href="/news" onClick={() => setIsOpen(false)}>NEWS</NavLink>
                         </motion.nav>
                     </>
